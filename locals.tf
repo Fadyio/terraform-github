@@ -11,7 +11,21 @@ locals {
       name               = "terraform-eci"
       description        = "Automated for Terraform Enterprise"
       gitignore_template = "Terraform"
-      topics             = ["terraform", "eci"]
+      topics             = ["terraform"]
+      visibility         = "public"
+    }
+    "terraform-aws-network" = {
+      name               = "terraform-aws-network"
+      description        = "Automated for Terraform Enterprise and aws network"
+      gitignore_template = "Terraform"
+      topics             = ["terraform", "aws"]
+      visibility         = "public"
+    }
+    "terraform-aws-cluster" = {
+      name               = "terraform-aws-cluster"
+      description        = "Automated for Terraform Enterprise and aws network"
+      gitignore_template = "Terraform"
+      topics             = ["terraform", "aws"]
       visibility         = "public"
     }
   }
